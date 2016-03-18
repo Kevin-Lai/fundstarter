@@ -44,6 +44,11 @@ console.log("Listening to server at http://localhost:8080\n");
 
 /* Part 2 */
 
+fs.exists('./index.html', function(exists) {
+
+if (exists) {
+
+
 fs.stat('./index.html', function(err, stats) {
 
     fs.open('./index.html', 'r', function(err, file) {
@@ -66,6 +71,10 @@ fs.stat('./index.html', function(err, stats) {
             fs.close(file);
         });
     });
+
+});
+
+}
 
 });
 
