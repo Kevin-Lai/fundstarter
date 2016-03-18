@@ -1,19 +1,19 @@
 {
   "name": "fundstarter",
   "version": "1.0.0",
-  "description": "Kevin Lai's First Fundstarter Web Application",
+  "description": "Kevin Lai's First Funstarter Web Application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Spoorthya/fundstarter.git"
+    "url": "git+https://github.com/Kevin-Lai/fundstarter.git"
   },
   "author": "Kevin Lai",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Spoorthya/fundstarter/issues"
+    "url": "https://github.com/Kevin-Lai/fundstarter/issues"
   },
-  "homepage": "https://github.com/Spoorthya/fundstarter#readme"
+  "homepage": "https://github.com/Kevin-Lai/fundstarter#readme"
 }
