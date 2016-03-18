@@ -1,15 +1,21 @@
-var express = require('express')
-var app = express()
+/* CMPE 172 HW 2 - Kevin Lai */
 
-/* serves all the static files*/
-app.set('port', (process.env.PORT || 8080))
-app.use(express.static(__dirname + '/public'))
+var http = require('http');
+var fs = require('fs');
 
-/*serves main page*/
-app.get('/', function(request, response) {
-response.sendfile('index.html') 
-})
+/* Part 1a */
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
-})
+var data = fs.readFileSync('./index.html');
+
+http.createServer(function(request, response) {
+
+        response.writeHead(200, {"Context-Type": "text/html"});
+        response.write(data);
+        response.end();
+
+    }).listen(process.env.PORT || 8080);
+
+console.log("Listening to server at http://localhost:8080\n");
+
+console.log("Loaded data after finish reading index.html:\n" + data);
+
